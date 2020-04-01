@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/shici/index/index",
+    "pages/shici/sc/sc",
+    "pages/shici/yq/yq",
+    "pages/shici/tangshi/tangshi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/shici/tangshi/tangshi",
+        "text": "唐诗",
+        "iconPath": "/img/tangshi.png",
+        "selectedIconPath": "/img/tangshi_.png"
+      },
+      {
+        "pagePath": "pages/shici/sc/sc",
+        "text": "宋词",
+        "iconPath": "/img/songci.png",
+        "selectedIconPath": "/img/songci_.png"
+      },
+      {
+        "pagePath": "pages/shici/yq/yq",
+        "text": "元曲",
+        "iconPath": "/img/yuanqu.png",
+        "selectedIconPath": "/img/yuanqu_.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

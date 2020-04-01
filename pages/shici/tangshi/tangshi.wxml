@@ -1,0 +1,24 @@
+<view class="main">
+    <scroll-view class="left" scroll-y="{{true}}" style='height:{{windowHeight}}px'>
+        <view wx:for="{{tsData}}" wx:for-item="item" wx:key="key" id="{{item.id}}" class="shiren {{item.cls}}" bindtap="clickItem">
+            {{item.text}}
+        </view>
+    </scroll-view>
+    <scroll-view class="right" scroll-y="{{true}}" style='height:{{windowHeight}}px'>
+        <view wx:if="{{curScItem}}">
+            <view class="scContentTitle">{{curScItem.title}}</view>
+            <view class="scContent" wx:for='{{curScItem.content}}' wx:key="key" wx:item="item">
+                {{item}}
+            </view>
+            <view class="scContentDesc">{{curScItem.desc}}</view>
+            <button type="default" bind:tap="handlebtn">返回</button>
+            <view class="btn">
+                <button type="warn" bind:tap="pre">上一首</button>
+                <button type="warn" bind:tap="next">下一首</button>
+            </view>
+        </view>
+        <view wx:if="{{!curScItem}}" id="{{item.id}}" bindtap='clickScItem' class="scTitle" wx:for='{{scArr}}' wx:key="key" wx:item="item">
+            {{item.title}}
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,11 @@
+<view class="main">
+    <view class="userinfo">
+        <open-data class="useravatar" type="userAvatarUrl"></open-data>
+        <open-data class="usernickname" type="userNickName"></open-data>
+    </view>
+    <navigator class="nav"  url="/pages/shici/sc/sc">
+        版本信息
+    </navigator>
+    <button class="btn" type="primary" open-type="getUserInfo" bindgetuserinfo="getmyuserinfo">获取用户授权</button>
+    <button type="warn" bindtap="toStudy">去学习页面</button>
+</view>
